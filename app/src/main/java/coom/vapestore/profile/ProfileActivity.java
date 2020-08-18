@@ -36,10 +36,13 @@ public class ProfileActivity extends AppCompatActivity {
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ProfileActivity.this, LoginActivity.class));
                 pref.saveSPInt(SharedPref.SP_IS_LOGIN, 0);
                 pref.saveSPInt(SharedPref.SP_ID_USER, 0);
+                Intent intent =new Intent(ProfileActivity.this, LoginActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
                 finish();
+
             }
         });
 

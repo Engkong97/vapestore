@@ -1,5 +1,6 @@
 package coom.vapestore.adapter;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -51,6 +52,7 @@ public class BarangAdapter extends RecyclerView.Adapter<BarangAdapter.ViewHolder
                 Intent intent = new Intent(context, UpdateBarangActivity.class);
                 intent.putExtra("IDBARANGUPDATE", String.valueOf(list.get(position).getBarangId()));
                 context.startActivity(intent);
+                ((Activity)context).finish();
             }
         });
     }

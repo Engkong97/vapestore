@@ -74,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, ProfileActivity.class));
+//                finish();
 //                pref.saveSPInt(SharedPref.SP_IS_LOGIN, 0);
             }
         });
@@ -104,5 +105,10 @@ public class MainActivity extends AppCompatActivity {
         rvListBarang.setHasFixedSize(true);
         rvListBarang.setAdapter(adapter);
 
+    }
+
+    @Override
+    public void onBackPressed() {
+       moveTaskToBack(true);
     }
 }

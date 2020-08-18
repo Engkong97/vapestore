@@ -36,7 +36,7 @@ public class SplashScreenActivity extends AppCompatActivity {
             @Override
             public void run() {
                 System.out.println(getExternalCacheDir());
-                if (pref.getUserName().equals("admin")) {
+                if (pref.getUserName().equals("admin") && pref.getIslogin()==1) {
                     startActivity(new Intent(getApplicationContext(), AdminActivity.class));
                     finish();
                 } else {

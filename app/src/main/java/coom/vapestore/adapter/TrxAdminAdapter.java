@@ -1,5 +1,6 @@
 package coom.vapestore.adapter;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -68,6 +69,7 @@ public class TrxAdminAdapter extends RecyclerView.Adapter<TrxAdminAdapter.ViewHo
                     intent.putExtra("TRXIDPAYMENT", list.get(position).getTrxId());
                     intent.putExtra("TRXIMAGE", list.get(position).getTrxImage());
                     context.startActivity(intent);
+                    ((Activity)context).finish();
                 } else {
                     Toast.makeText(context, "Sudah Dikirim", Toast.LENGTH_SHORT).show();
                 }

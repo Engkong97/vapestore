@@ -80,9 +80,9 @@ public class LoginActivity extends AppCompatActivity {
                             if (txtUsername.getText().toString().equals("admin") && txtPassword.getText().toString().equals("admin1234")) {
                                 pd.dismiss();
                                 startActivity(new Intent(LoginActivity.this, AdminActivity.class));
+                                finish();
                                 pref.saveSPInt(SharedPref.SP_IS_LOGIN, 1);
                                 pref.saveSPString(SharedPref.SP_USER_NAME, "admin");
-                                finish();
                             } else {
                                 pd.dismiss();
                                 try{
@@ -93,6 +93,7 @@ public class LoginActivity extends AppCompatActivity {
                                     Log.i("count", String.valueOf(count));
                                     if (count == 1){
                                         startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                                        finish();
                                         Cursor csr =db.getUserDetail(secKey);
 //                                        Log.i("idUser", String.valueOf(csr.getString(0)));
                                         pref.saveSPInt(SharedPref.SP_IS_LOGIN, 1);
@@ -104,7 +105,6 @@ public class LoginActivity extends AppCompatActivity {
                                             Log.i("userName", String.valueOf(csr.getString(4)));
                                         }
 //                                        playSound();
-                                        finish();
                                     } else {
                                         Toast.makeText(LoginActivity.this,"Username/Password Anda Salah", Toast.LENGTH_SHORT).show();
                                     }
@@ -122,5 +122,13 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
 
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(LoginActivity.this, MainActivity.class));
+    }
 }
