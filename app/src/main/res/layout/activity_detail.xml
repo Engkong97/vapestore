@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#1297E0">
+
+            <ImageView
+                android:id="@+id/btnBackDetail"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/btn_back"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image_barang_detail"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/vape" />
+
+
+        <TextView
+            android:id="@+id/namaBarangDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            tools:text="Smoant"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/hargaBarangDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            tools:text="Rp. 150.000"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/separator_top"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/separator_top">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/desc_barang_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                tools:text="Lorem Ipsun" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBeli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="#1297E0"
+        android:text="Beli"
+        android:textSize="15sp"
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>

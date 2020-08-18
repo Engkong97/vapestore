@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="coom.vapestore">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:overrideLibrary="androidx.legacy.v4">
+        <activity android:name=".admin.UpdateBarangActivity"></activity>
+        <activity android:name=".admin.PaymentSlipActivity" />
+        <activity android:name=".profile.HistoryTrxActivity" />
+        <activity android:name=".profile.DetailConfirmTrxActivity" />
+        <activity android:name=".admin.OrderActivity" />
+        <activity android:name=".profile.ConfirmTransactionActivity" />
+        <activity android:name=".CartActivity" />
+        <activity android:name=".DetailActivity" />
+        <activity android:name=".profile.ChangePasswordActivity" />
+        <activity android:name=".profile.ProfileActivity" />
+        <activity android:name=".admin.ListUserActivity" />
+        <activity android:name=".admin.InventoryActivity" />
+        <activity android:name=".admin.AddItemActivity" />
+        <activity android:name=".admin.AdminActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

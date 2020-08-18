@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginHorizontal="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="10dp"
+    android:id="@+id/card_trx">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:paddingVertical="5dp"
+            android:id="@+id/status_trx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingHorizontal="10dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            android:text="Belum Konfirmasi" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/img_uncorfm_trx"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            tools:src="@drawable/vape" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:paddingVertical="5dp"
+                android:id="@+id/nama_pemesan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                tools:text="Grab" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:paddingLeft="5dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:text="Nama Barang" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.05"
+                    android:paddingLeft="5dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:text=":" />
+
+                <TextView
+                    android:id="@+id/nama_barang_trx"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    tools:text="testinggggggggggggg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:paddingLeft="5dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:text="Harga Barang" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.05"
+                    android:paddingLeft="5dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:text=":" />
+
+                <TextView
+                    android:id="@+id/harga_barang_trx"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    tools:text="10000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:paddingLeft="5dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:text="Jumlah Barang" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.05"
+                    android:paddingLeft="5dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:text=":" />
+
+                <TextView
+                    android:id="@+id/jmlh_barang_trx"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    tools:text="testinggggggggggggg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:paddingLeft="5dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:text="Total Harga" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.05"
+                    android:paddingLeft="5dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:text=":" />
+
+                <TextView
+                    android:id="@+id/total_harga_trx"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    tools:text="testinggggggggggggg" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<View-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="@dimen/_2sdp"-->
+    <!--android:layout_gravity="bottom"-->
+    <!--android:background="@android:color/darker_gray"-->
+    <!--android:paddingTop="@dimen/_1sdp" />-->
+
+</androidx.cardview.widget.CardView>

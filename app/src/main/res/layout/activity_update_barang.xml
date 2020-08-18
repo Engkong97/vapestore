@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.UpdateBarangActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/tmbhNamaBarangUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="Nama Barang" />
+
+        <EditText
+            android:id="@+id/tmbhHargaUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="Harga" />
+
+        <EditText
+            android:id="@+id/tmbhQtyUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="Quantity" />
+
+        <EditText
+            android:id="@+id/tmbhDescUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="Deskripsi"
+            android:inputType="text|textMultiLine"
+            android:lines="5" />
+
+        <ImageView
+            android:id="@+id/addImageInventoryUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/image"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSaveTmbhUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Save"
+        android:textColor="@android:color/white"
+        android:background="#1297E0"/>
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/imgMain"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/vape" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="0.5"-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:textSize="14sp"-->
+<!--                android:text="Nama Barang" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="0.05"-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:textSize="15sp"-->
+<!--                android:text=":" />-->
+
+            <TextView
+                android:id="@+id/namaBarangMain"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="10sp"
+                tools:text="Pods" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/hargaBarangMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            tools:text="Rp. 50.000" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
